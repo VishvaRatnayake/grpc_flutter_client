@@ -12,6 +12,7 @@ class Hello {
       return response.person;
     } else {
       print ("Error");
+      return Person();
     }
     
   }

@@ -14,7 +14,7 @@ class Connection {
 
   //https
   Future<ClientChannel> getHttpsConnection() async {
-    ByteData byte = await rootBundle.load('resources/cert.pem');
+    ByteData byte = await rootBundle.load('assets/cert.pem');
     return ClientChannel(Config.SERVER_URL,
         port: Config.PORT,
         options: ChannelOptions(
